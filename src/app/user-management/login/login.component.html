@@ -1,0 +1,15 @@
+<form >
+<div class="bg text-center">
+    <!--Div for Centered Text & Input-->
+    <div class="centered">
+        <p class="firstLine"> E &nbsp; M &nbsp; A &nbsp; I &nbsp; L &nbsp; . &nbsp; M &nbsp; E </p>
+        <p class="secondLine">The Simplest Email Client Ever</p>
+        <p> <input class="InputStyle" #Email placeholder="Enter Email  &#xf0e0;" style="font-family:Arial, FontAwesome" type="text"> </p>
+        <p> <input class="InputStyle" #Password placeholder="Enter Password &#xf0e0;" style="font-family:Arial, FontAwesome" type="text"> </p>
+        <p><button type="button"  (click)="login($event,Email,Password)" (keydown)="login($event,Email,Password)"  class="btn btn-success" style="width: 100%;">Success</button></p>
+    </div>
+    <!--Div for bottom Icons-->
+    <div class="social-btn"> <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a> <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+    </div>
+</div>
+</form>

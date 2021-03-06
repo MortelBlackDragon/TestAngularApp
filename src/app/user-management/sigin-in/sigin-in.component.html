@@ -1,0 +1,48 @@
+<form #f="ngForm" (ngSubmit)="Save(f.value)">
+  <div class="form-group row">
+    <label for="staticEmail"  class="col-sm-1 col-form-label">Email</label>
+    <div class="col-sm-2">
+      <input type="text" ngModel class="form-control" id="staticEmail" name="Email" value="email@example.com">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword" class="col-sm-1 col-form-label">Password</label>
+    <div class="col-sm-2">
+      <input type="password" ngModel class="form-control" id="inputPassword" name="PassWord" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="reinputPassword" class="col-sm-1 col-form-label">Re Enter Password</label>
+    <div class="col-sm-2">
+      <input type="password" ngModel class="form-control" id="reinputPassword" name="RePassWord" placeholder="Re Enter Password">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="exampleFormControlSelect1" class="col-sm-1 col-form-label">User Type</label>
+    <div class="col-sm-2">
+      <select class="form-control" ngModel name="UserType" id="exampleFormControlSelect1">
+        <option>Admin</option>
+        <option>Normal User</option>
+        <option>IT User</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-2">
+      <div class="form-check">
+        <input class="form-check-input" ngModel  name="EnforceLoginProtection" type="checkbox" value="" id="defaultCheck2">
+        <label class="form-check-label" for="defaultCheck2">
+          enforce login protection
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-2">
+      <button type="submit" style="width: 100%;" class="btn btn-primary">Sign In</button>
+    </div>
+  </div>
+</form>

@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AppUser';
+
+  Save(val: any): number {
+    return 1;
+  }
+
+
+
+
+
 }
